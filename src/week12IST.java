@@ -184,10 +184,16 @@ public class week12IST {
 
     public static void reverseTheNumber(){
 
+
+
+
     }
 
     public static void convertingValues(){
-        
+
+    Scanner input = new Scanner(System.in);
+    System.out.println("What would you like to convert. \n 1 = Pounds to Kilograms \n 2 = British pounds to Euros \n 3 = Fahrenheit to Celsius \n 4 = Time to seconds" );
+
 
 
 
