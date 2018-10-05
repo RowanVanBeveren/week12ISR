@@ -158,6 +158,8 @@ public class week12IST {
             else if (count == 10){
                 System.out.println(number + "      " + square + "     " + cube);
             }
+
+
         }
 
 
@@ -193,8 +195,27 @@ public class week12IST {
 
     Scanner input = new Scanner(System.in);
     System.out.println("What would you like to convert. \n 1 = Pounds to Kilograms \n 2 = British pounds to Euros \n 3 = Fahrenheit to Celsius \n 4 = Time to seconds" );
+       int answer = input.nextInt();
+       if(answer == 1){
+           lbsToKg();
+
+       }
 
 
+
+
+
+
+
+
+
+    }
+    private static void lbsToKg(){
+        Scanner input = new Scanner(System.in);
+        System.out.println("What is the number of lbs you would like to convert");
+        double lbs = input.nextDouble();
+        double kg = lbs * 0.453;
+        System.out.println(kg);
 
 
     }
