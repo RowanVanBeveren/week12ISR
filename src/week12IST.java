@@ -10,7 +10,7 @@ public class week12IST {
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);
-        System.out.println("Which program would you like to run? \n 1 = newSalaryProgram \n 2 = newSalaryDoubleProgram \n 3 = salaryIncreaseProgram \n 4 = calculateAverageProgram \n 5 = tableOfSquaresAndCubes \n 6 = whatIsThePercentage ");
+        System.out.println("Which program would you like to run? \n 1 = newSalaryProgram \n 2 = newSalaryDoubleProgram \n 3 = salaryIncreaseProgram \n 4 = calculateAverageProgram \n 5 = tableOfSquaresAndCubes \n 6 = whatIsThePercentage \n 7 = reverseNumbers \n 8 = convertingNumbers (Hard coded) \n 9 = convertingNumbers ");
         int number = scan.nextInt();
         if (number == 1) {
             newSalaryProgram();
@@ -34,6 +34,9 @@ public class week12IST {
             reverseTheNumber();
         }
         else if (number == 8){
+            convertingValuesHard();
+        }
+        else if (number == 9){
             convertingValues();
         }
         else {
@@ -191,13 +194,46 @@ public class week12IST {
 
     }
 
+
+
+    public static void convertingValuesHard(){
+        double lbs = 200;
+        double kg;
+        double brp = 100;
+        double euro;
+        double fahrenheit = 75;
+        double celsius;
+        int hour = 1;
+        int min = 28;
+        int seconds = 42;
+        int tSeconds;
+
+        kg = lbs * 0.453592;
+        euro = brp * 1.14;
+        celsius = (fahrenheit - 32)*5/9;
+        tSeconds = (hour * 60 * 60) + (min *60) + seconds;
+
+
+        System.out.println(lbs + "lbs is equivalent to " + kg + "kg");
+        System.out.println("£"+ brp + " is equivalent is to " + euro + " Euros");// unable to find euro symbol
+        System.out.println(fahrenheit + " Fahrenheit is equivalent to " + celsius + " Celsius");
+        System.out.println(hour + " hour " + min + " minutes " + seconds + " seconds is equivalent to " + tSeconds + " seconds" );
+
+
+
+
+
+
+    }
+
     public static void convertingValues(){
 
     Scanner input = new Scanner(System.in);
     System.out.println("What would you like to convert. \n 1 = Pounds to Kilograms \n 2 = British pounds to Euros \n 3 = Fahrenheit to Celsius \n 4 = Time to seconds" );
        int answer = input.nextInt();
        if(answer == 1){
-           lbsToKg();
+
+
 
        }
 
@@ -210,15 +246,7 @@ public class week12IST {
 
 
     }
-    private static void lbsToKg(){
-        Scanner input = new Scanner(System.in);
-        System.out.println("What is the number of lbs you would like to convert");
-        double lbs = input.nextDouble();
-        double kg = lbs * 0.453;
-        System.out.println(kg);
 
-
-    }
 
 }
 
